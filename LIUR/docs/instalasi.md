@@ -1,40 +1,56 @@
 ## Instalasi
 
-(Jika pakai windows, bisa diinstall lewat cygwin / Baboon / WSL)
+(Jika pakai windows, bisa diinstall lewat [Cygwin](https://www.cygwin.com/) / [Baboon](http://babun.github.io/) / [WSL](https://msdn.microsoft.com/en-us/commandline/wsl/install_guide))
 
-1. Install Vagrant. Lalu install plugin vagrant-env
+Install [Vagrant](http://vagrantup.com/). Lalu install plugin `vagrant-env`
 
+```shell
 $ vagrant plugin install vagrant-env
+```
 
-2. Siapkan virtualenv untuk liur HARUS dengan python3
+Siapkan virtualenv untuk liur **HARUS** dengan `python3`
 
+```shell
 mkvirtualenv -p `which python3` liur
 workon liur
+```
 
-3. Clone repo liur dan bikin .env
+Clone repo `liur` dan bikin `.env`
 
+```shell
 git clone git@github.com:jogjacamp/liur.git
 cd liur
 python setup.py develop
 cp .env.example .env
+```
 
-4. Edit .env. Ganti XS_PASSWORD sesuai password xenserver
+Edit `.env`. Ganti `XS_PASSWORD` sesuai password xenserver
 
+```bash
 XS_PASSWORD="somethingstupidlikeiloveyou"
+```
 
-5. Install vagrant plugin vagrant-xenserver
+Install vagrant plugin `vagrant-xenserver`
 
+```shell
 vagrant plugin install scripts/vagrant-xenserver-0.0.14.gem
+```
 
-6. Setup project liur
+Setup project `liur`
 
+```shell
 $ liur setup.me
 $ liur setup.infra
+```
 
-7. Provision semua server untuk Kazoo
+Provision semua server untuk Kazoo
 
+```shell
 $ liur nodes.up
+```
 
-8. Deploy kazoo
+Deploy kazoo
 
+```shell
 $ liur deploy
+```
