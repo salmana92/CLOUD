@@ -1,8 +1,7 @@
-# LIUR DOKUMENTASI
+## LIUR
 
-## Deskripsi
 
-LIUR adalah aplikasi dalam bentuk IaaC (Infrastructure as a Code) yang dibangun JogjaCamp atas permintaan BBT (Batam Bintan Telekomunikasi) untuk membangun infrastuktur telekomunikasi VoIP berbasis kazoo.
+Adalah aplikasi dalam bentuk IaaC (Infrastructure as a Code) yang dibangun JogjaCamp atas permintaan BBT (Batam Bintan Telekomunikasi) untuk membangun infrastuktur telekomunikasi VoIP berbasis kazoo.
 
 liur akan mem-bootstrap node / layanan yang dibutuhkan kazoo seperti:
 
