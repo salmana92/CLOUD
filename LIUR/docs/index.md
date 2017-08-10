@@ -1,17 +1,14 @@
-# Welcome to MkDocs
+# LIUR DOKUMENTASI
 
-For full documentation visit [mkdocs.org](http://mkdocs.org).
+## Deskripsi
 
-## Commands
+LIUR adalah aplikasi dalam bentuk IaaC (Infrastructure as a Code) yang dibangun JogjaCamp atas permintaan BBT (Batam Bintan Telekomunikasi) untuk membangun infrastuktur telekomunikasi VoIP berbasis kazoo.
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs help` - Print this help message.
+liur akan mem-bootstrap node / layanan yang dibutuhkan kazoo seperti:
 
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+* Kamailio
+* FreeSwitch
+* CouchDB
+* Web app (monster UI)
+* Billing app (next development)
+* dll
