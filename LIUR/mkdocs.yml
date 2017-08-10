@@ -1,9 +1,10 @@
 site_name: LIUR DOKUMENTASI
 pages:
     - Home: index.md
-    - Komponen: komponen.md
     - Terminologi: terminologi.md
+    - Komponen: komponen.md
     - Instalasi: instalasi.md
+    - User Guide: userguide.md
 theme: readthedocs
 
 

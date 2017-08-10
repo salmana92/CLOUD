@@ -1,0 +1,9 @@
+## User Guide
+
+### Register 
+* Buka halaman ...
+* Pilih register ...
+
+### Calling
+* Pilih nomer tujuan
+* ...
