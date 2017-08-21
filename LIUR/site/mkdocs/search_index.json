@@ -1,0 +1,114 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "__    _\n           / /   (_)_  _______\n          / /   / / / / / ___/\n         / /___/ / /_/ / /\n        /_____/_/\\__,_/_/\n\n\n\nliur\n adalah aplikasi dalam bentuk \nIaaC\n (Infrastructure as a Code) yang dibangun JogjaCamp atas permintaan BBT (Batam Bintan Telekomunikasi) untuk membangun infrastuktur telekomunikasi VoIP berbasis kazoo.\n\n\nliur\n akan mem-\nbootstrap\n node / layanan yang dibutuhkan kazoo seperti:\n\n\n\n\nkamailio\n\n\nFreeSwitch\n\n\nCouchDB\n\n\nweb app (monster UI)\n\n\nbilling app (next development)\n\n\ndll", 
+            "title": "Home"
+        }, 
+        {
+            "location": "/terminologi/", 
+            "text": "Terminologi\n\n\nDalam rangka mengikuti tata kelola pengembangan aplikasi yang baik, liur menggunakan 3 environment (dev, staging, prod) dimana pada setiap environment dilakukan testing supaya meminimalisir error.\n\n\nDev Environment\n\n\nAdalah environment awal dalam pengembangan, biasanya ada di workstation atau laptop pengembang aplikasi\n\n\nStaging Environment\n\n\nAdalah environment diatas dev, dimana setelah pengembang aplikasi melakukan perubahan apapun, bisa dicoba dalam environment ini. Disini hypervisor menggunakan Xenserver dibantu oleh vagrant sebagai aplikasi bantu dalam deployment dan provisioning.\n\n\nProduksi Environment\n\n\nAdalah environment utama yang dimana end user menggunakannya. Disini service yang berjalan sudah harus HA (High Availability), sehingga hypervisor Xenserver akan diiringi dengan openstack untuk orkestrasi dari seluruh komponen kazoo.", 
+            "title": "Terminologi"
+        }, 
+        {
+            "location": "/terminologi/#terminologi", 
+            "text": "Dalam rangka mengikuti tata kelola pengembangan aplikasi yang baik, liur menggunakan 3 environment (dev, staging, prod) dimana pada setiap environment dilakukan testing supaya meminimalisir error.", 
+            "title": "Terminologi"
+        }, 
+        {
+            "location": "/terminologi/#dev-environment", 
+            "text": "Adalah environment awal dalam pengembangan, biasanya ada di workstation atau laptop pengembang aplikasi", 
+            "title": "Dev Environment"
+        }, 
+        {
+            "location": "/terminologi/#staging-environment", 
+            "text": "Adalah environment diatas dev, dimana setelah pengembang aplikasi melakukan perubahan apapun, bisa dicoba dalam environment ini. Disini hypervisor menggunakan Xenserver dibantu oleh vagrant sebagai aplikasi bantu dalam deployment dan provisioning.", 
+            "title": "Staging Environment"
+        }, 
+        {
+            "location": "/terminologi/#produksi-environment", 
+            "text": "Adalah environment utama yang dimana end user menggunakannya. Disini service yang berjalan sudah harus HA (High Availability), sehingga hypervisor Xenserver akan diiringi dengan openstack untuk orkestrasi dari seluruh komponen kazoo.", 
+            "title": "Produksi Environment"
+        }, 
+        {
+            "location": "/komponen/", 
+            "text": "Komponen\n\n\nLIUR dibangun menggunakan python sebagai program utama untuk mengatur beberapa komponen berikut:\n\n\n\n\nbundlewrap\n\n\nvirtualenvwrapper\n\n\nsaltstack\n\n\nvagrant\n\n\nxenserver\n\n\ndll", 
+            "title": "Komponen"
+        }, 
+        {
+            "location": "/komponen/#komponen", 
+            "text": "LIUR dibangun menggunakan python sebagai program utama untuk mengatur beberapa komponen berikut:   bundlewrap  virtualenvwrapper  saltstack  vagrant  xenserver  dll", 
+            "title": "Komponen"
+        }, 
+        {
+            "location": "/instalasi/vagrant/", 
+            "text": "Install Vagrant\n\n\n\n\n\n\nDownload \nVagrant\n\n\n\n\n\n\nInstall", 
+            "title": "Install Vagrant"
+        }, 
+        {
+            "location": "/instalasi/vagrant/#install-vagrant", 
+            "text": "Download  Vagrant    Install", 
+            "title": "Install Vagrant"
+        }, 
+        {
+            "location": "/instalasi/python3/", 
+            "text": "Install Python 3\n\n\n\n\n\n\nBuka \nTerminal\n\n\n\n\n\n\nInstall \nHomebrew\n\n\n\n\n\n\n/usr/bin/ruby -e \n$(curl -fsSL https://raw.githubusercontent.com/Homebrew\n/install/master/install)\n\n\n\n\n\n\n\nPindahkan \nPATH\n \n\n\n\n\nexport PATH=/usr/local/bin:/usr/local/sbin:$PATH\n\n\n\n\n\n\nInstall \nPython 3\n\n\n\n\n$ brew install python3\n\n\n\n\n\n\nInstall \nPip\n \n\n\n\n\n$ install pip", 
+            "title": "Install Python3"
+        }, 
+        {
+            "location": "/instalasi/python3/#install-python-3", 
+            "text": "Buka  Terminal    Install  Homebrew    /usr/bin/ruby -e  $(curl -fsSL https://raw.githubusercontent.com/Homebrew\n/install/master/install)    Pindahkan  PATH     export PATH=/usr/local/bin:/usr/local/sbin:$PATH   Install  Python 3   $ brew install python3   Install  Pip     $ install pip", 
+            "title": "Install Python 3"
+        }, 
+        {
+            "location": "/instalasi/virtualenv/", 
+            "text": "Install Virtualenvwrapper\n\n\n\n\n\n\nBuka \nTerminal\n\n\n\n\n\n\nInstall \nVirtualenwrapper\n\n\n\n\n\n\n$ pip install virtualenvwrapper\n\n\n\n\n\n\nEdit file \n~/.zshrc\n --\n \nplugin=(git virtualenvwrapper)\n\n\n\n\n$ vim ~/.zshrc\n\n\n\n\n\n\n\n\nBuat virtualenv baru\n\n\n\n\n$ mkvirtualenv -p `which python3` liur\n\n$ workon liur", 
+            "title": "Install Virtualenvwrapper"
+        }, 
+        {
+            "location": "/instalasi/virtualenv/#install-virtualenvwrapper", 
+            "text": "Buka  Terminal    Install  Virtualenwrapper    $ pip install virtualenvwrapper   Edit file  ~/.zshrc  --   plugin=(git virtualenvwrapper)   $ vim ~/.zshrc    Buat virtualenv baru   $ mkvirtualenv -p `which python3` liur\n\n$ workon liur", 
+            "title": "Install Virtualenvwrapper"
+        }, 
+        {
+            "location": "/instalasi/configliur/", 
+            "text": "Config LIUR\n\n\n$ git clone git@github.com:jogjacamp/liur.git\n\n\n\n\n\n\n$ cd liur\n\n$ pip install -r requirements.txt\n\n$ python setup.py develop\n\n\n\n\n\n\nJika gagal, ketikkan :\n\n\n\n\n$ pip install cryptography --global-option=build_ext --global-option=\n-L/usr/local/opt/openssl/lib\n --global-option=\n-I/usr/local/opt/openssl/include\n\n\n\n\n\n\n\nInstall vagrant plugin \nvagrant-xenserver\n\n\n\n\n$ vagrant plugin install scripts/vagrant-xenserver-0.0.14.gem\n\n$ liur setup.me\n\n$ liur setup.infra\n\n\n\n\n\n\n\n\nBuat file private key .secrets.cfg di dalam /liur (private key : dari orang yg pertama kali buat project)\n\n\n\n\n$ vim ~/salma/liur/.secrets.cfg", 
+            "title": "Konfigurasi Liur"
+        }, 
+        {
+            "location": "/instalasi/configliur/#config-liur", 
+            "text": "$ git clone git@github.com:jogjacamp/liur.git   $ cd liur\n\n$ pip install -r requirements.txt\n\n$ python setup.py develop   Jika gagal, ketikkan :   $ pip install cryptography --global-option=build_ext --global-option= -L/usr/local/opt/openssl/lib  --global-option= -I/usr/local/opt/openssl/include    Install vagrant plugin  vagrant-xenserver   $ vagrant plugin install scripts/vagrant-xenserver-0.0.14.gem\n\n$ liur setup.me\n\n$ liur setup.infra    Buat file private key .secrets.cfg di dalam /liur (private key : dari orang yg pertama kali buat project)   $ vim ~/salma/liur/.secrets.cfg", 
+            "title": "Config LIUR"
+        }, 
+        {
+            "location": "/instalasi/kazoo/", 
+            "text": "Kazoo\n\n\n\n\nProvision semua server untuk Kazoo\n\n\n\n\n$ liur nodes.up\n\n\n\n\n\n\nDeploy Kazoo\n\n\n\n\n$ liur deploy", 
+            "title": "Install Kazoo"
+        }, 
+        {
+            "location": "/instalasi/kazoo/#kazoo", 
+            "text": "Provision semua server untuk Kazoo   $ liur nodes.up   Deploy Kazoo   $ liur deploy", 
+            "title": "Kazoo"
+        }, 
+        {
+            "location": "/userguide/", 
+            "text": "User Guide\n\n\nJika pakai windows, bisa diinstall lewat \ncygwin\n / \nBaboon\n atau yang ketoke paling oke yaitu \nWSL\n\n\nRegister\n\n\n\n\nBuka halaman ...\n\n\nPilih register ...\n\n\n\n\nCalling\n\n\n\n\nPilih nomer tujuan\n\n\n...", 
+            "title": "User Guide"
+        }, 
+        {
+            "location": "/userguide/#user-guide", 
+            "text": "Jika pakai windows, bisa diinstall lewat  cygwin  /  Baboon  atau yang ketoke paling oke yaitu  WSL", 
+            "title": "User Guide"
+        }, 
+        {
+            "location": "/userguide/#register", 
+            "text": "Buka halaman ...  Pilih register ...", 
+            "title": "Register"
+        }, 
+        {
+            "location": "/userguide/#calling", 
+            "text": "Pilih nomer tujuan  ...", 
+            "title": "Calling"
+        }
+    ]
+}

@@ -3,8 +3,10 @@ pages:
     - Home: index.md
     - Terminologi: terminologi.md
     - Komponen: komponen.md
-    - Instalasi: instalasi.md
+    - Instalasi:
+        - 'Install Vagrant' : 'instalasi/vagrant.md'
+        - 'Install Python3' : 'instalasi/python3.md'
+        - 'Install Virtualenvwrapper' : 'instalasi/virtualenv.md'
+        - 'Konfigurasi Liur' : 'instalasi/configliur.md'
+        - 'Install Kazoo' : 'instalasi/kazoo.md'
     - User Guide: userguide.md
-theme: readthedocs
-
-

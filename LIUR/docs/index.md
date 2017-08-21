@@ -1,13 +1,17 @@
-## LIUR
+                __    _
+               / /   (_)_  _______
+              / /   / / / / / ___/
+             / /___/ / /_/ / /
+            /_____/_/\__,_/_/
 
 
-Adalah aplikasi dalam bentuk IaaC (Infrastructure as a Code) yang dibangun JogjaCamp atas permintaan BBT (Batam Bintan Telekomunikasi) untuk membangun infrastuktur telekomunikasi VoIP berbasis kazoo.
+`liur` adalah aplikasi dalam bentuk `IaaC` (Infrastructure as a Code) yang dibangun JogjaCamp atas permintaan BBT (Batam Bintan Telekomunikasi) untuk membangun infrastuktur telekomunikasi VoIP berbasis kazoo.
 
-liur akan mem-bootstrap node / layanan yang dibutuhkan kazoo seperti:
+`liur` akan mem-_bootstrap_ node / layanan yang dibutuhkan kazoo seperti:
 
-* Kamailio
-* FreeSwitch
-* CouchDB
-* Web app (monster UI)
-* Billing app (next development)
-* dll
+- kamailio
+- FreeSwitch
+- CouchDB
+- web app (monster UI)
+- billing app (next development)
+- dll

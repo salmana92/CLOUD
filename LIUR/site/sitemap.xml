@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    
+    <url>
+     <loc>/</loc>
+     <lastmod>2017-08-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>/terminologi/</loc>
+     <lastmod>2017-08-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>/komponen/</loc>
+     <lastmod>2017-08-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+        
+    <url>
+     <loc>/instalasi/vagrant/</loc>
+     <lastmod>2017-08-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/instalasi/python3/</loc>
+     <lastmod>2017-08-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/instalasi/virtualenv/</loc>
+     <lastmod>2017-08-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/instalasi/configliur/</loc>
+     <lastmod>2017-08-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/instalasi/kazoo/</loc>
+     <lastmod>2017-08-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+    <url>
+     <loc>/userguide/</loc>
+     <lastmod>2017-08-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+</urlset>
